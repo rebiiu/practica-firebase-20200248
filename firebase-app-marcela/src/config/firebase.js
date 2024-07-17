@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from 'firebase/storage';
+import auth from '@react-native-firebase/auth';
 import { API_KEY, AUTH_DOMAIN, PROJECT_ID, STORAGE_BUCKET, MESSAGING_SENDER_ID, APP_ID, Test } from '@env';
 
 // Your web app's Firebase configuration
@@ -41,4 +42,4 @@ if (storage) {
   console.log('storage initialization failed');
 }
 
-export { database,storage };
+export { database,storage , auth };
